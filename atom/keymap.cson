@@ -1,0 +1,79 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+'atom-workspace':
+  'cmd-b': 'recent-files-fuzzy-finder:toggle-finder'
+
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
+# * https://atom.io/docs/latest/advanced/keymaps
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+'atom-text-editor':
+  'cmd-\'': 'custom-search:search'
+
+'atom-text-editor:not([mini])[data-grammar~="cs"], atom-text-editor:not([mini])[data-grammar~="csx"]':
+  'cmd-d': 'omnisharp-atom:go-to-definition'
+  'ctrl-j': 'omnisharp-atom:navigate-down'
+  'ctrl-k': 'omnisharp-atom:navigate-up'
+  'shift-cmd-R': 'omnisharp-atom:find-symbols'
+  'f2': 'omnisharp-atom:rename'
+  'f1': 'omnisharp-atom:type-lookup'
+  ';': 'omnisharp-atom:code-format-on-semicolon'
+  '}': 'omnisharp-atom:code-format-on-curly-brace'
+  'shift-f12': 'omnisharp-atom:find-usages'
+  'ctrl-.': 'omnisharp-atom:get-code-actions'
+  'f8': 'omnisharp-atom:go-to-next-usage'
+  'shift-f8': 'omnisharp-atom:go-to-previous-usage'
+
+'.platform-darwin atom-text-editor.vim-mode:not(.insert-mode)':
+  'ctrl-p': 'clipboard-plus:toggle'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  ';': 'vim-mode-plus:inner-any-pair'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'ctrl-i': 'cursor-history:next'
+  'ctrl-o': 'cursor-history:prev'
+  'ctrl-cmd-i': 'cursor-history:next-within-editor'
+  'ctrl-cmd-o': 'cursor-history:prev-within-editor'
+  # or
+  ']': 'cursor-history:next'
+  '[': 'cursor-history:prev'
+  # 's': 'isearch:search-forward'
+  # 'S': 'isearch:search-backward'
+  'S':   'vim-mode-plus:surround-word'
+  'd s': 'vim-mode-plus:delete-surround-any-pair'
+  'c s':  'vim-mode-plus:change-surround-any-pair'
+
+# operator-pending, visual
+# -------------------------
+'atom-text-editor.vim-mode-plus.operator-pending-mode':
+  'ctrl-c': 'vim-mode:reset-normal-mode'
+
+'atom-text-editor.vim-mode-plus-surround':
+  'ctrl-c': 'vim-mode:surround-cancel'
+
+'atom-text-editor.vim-mode-plus-search':
+  '[': 'vim-mode-plus:search-visit-prev'
+  ']': 'vim-mode-plus:search-visit-next'
+  ';': 'vim-mode-plus:search-confirm'
+  'ctrl-f': 'vim-mode-plus:search-scroll-next'
+  'ctrl-b': 'vim-mode-plus:search-scroll-prev'
+
+'atom-workspace:not([mini])':
+  'ctrl-c': 'core:cancel'

@@ -1,0 +1,123 @@
+"*":
+  core:
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_STORE"
+      "._*"
+      "Thumbs.db"
+      ".png"
+      ".prefab"
+      ".scene"
+      ".meta"
+      "spine-runtimes/spine-!(csharp)*"
+    ]
+    packagesWithKeymapsDisabled: [
+      "omnisharp-atom"
+      "advanced-new-file"
+      "recent-files-fuzzy-finder"
+    ]
+    disabledPackages: [
+      "vim-mode"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 12
+    tabLength: 4
+    autoIndentOnPaste: false
+    scrollPastEnd: true
+  "save-session":
+    dataSaveFolder: "/Users/tommunro/.atom/packages/save-session/projects"
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  "exception-reporting":
+    userId: "4e60054e-b114-900d-a44d-ceb709d5b065"
+  welcome:
+    showOnStartup: false
+  "atom-typescript": {}
+  "clipboard-plus": {}
+  "cursor-history":
+    flashOnLand: true
+    excludeClosedBuffer: true
+  "fuzzy-finder":
+    searchAllPanes: true
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_STORE"
+      "._*"
+      "Thumbs.db"
+      "*.png"
+      "*.prefab"
+      "*.scene"
+      "*.meta"
+      "*.psd"
+      "*.ttf"
+      "*.mat"
+      "*.asset"
+      "*.unity"
+    ]
+  linter: {}
+  "autocomplete-plus":
+    builtinProviderBlacklist: "source.cs"
+    enableBuiltinProvider: false
+  "omnisharp-atom":
+    nagAddExternalProjects: false
+    nagAdjustTreeView: false
+    codeLens: false
+  zentabs: {}
+  "recent-files-fuzzy-finder":
+    restoreSession: true
+  autosave:
+    enabled: true
+  tabs:
+    enableVcsColoring: true
+  "vim-mode-plus":
+    enableIncrementalSearch: true
+    showHoverOnOperate: true
+    showHoverSearchCounter: true
+    useSmartcaseForSearch: true
+    incrementalSearch: true
+    stayOnTransformString: true
+  "todo-show":
+    ignoreThesePaths: [
+      "Assets/Extensions"
+      "spine-runtimes/"
+      "Assets/Ferr"
+      "*.shader"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+  "markdown-preview": {}
+  "file-templates": {}
+  typewriter: {}
+  "markdown-writer": {}
+".source.ts":
+  editor:
+    autoIndent: true
+".coffee.source":
+  editor:
+    tabLength: 2
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
+    showIndentGuide: true
+    showInvisibles: false
+"source.coffee":
+  "custom-search":
+    url: "http://stackoverflow.com/search"
+    query: "?q="
+"source.cs":
+  "custom-search":
+    url: "http://docs.unity3d.com/ScriptReference/30_search.html"
+    query: "?q="
+"source.gfm":
+  editor:
+    softWrap: true
